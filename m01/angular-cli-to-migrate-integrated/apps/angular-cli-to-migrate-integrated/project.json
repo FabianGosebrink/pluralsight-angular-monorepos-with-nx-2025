@@ -1,0 +1,85 @@
+{
+  "name": "angular-cli-to-migrate-integrated",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "generators": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
+  "sourceRoot": "apps/angular-cli-to-migrate-integrated/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "options": {
+        "browser": "apps/angular-cli-to-migrate-integrated/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/angular-cli-to-migrate-integrated/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/angular-cli-to-migrate-integrated/public"
+          }
+        ],
+        "styles": ["apps/angular-cli-to-migrate-integrated/src/styles.scss"],
+        "outputPath": "dist/angular-cli-to-migrate-integrated"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kB",
+              "maximumError": "1MB"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kB",
+              "maximumError": "8kB"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": ["{options.outputPath}"]
+    },
+    "serve": {
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "angular-cli-to-migrate-integrated:build:production"
+        },
+        "development": {
+          "buildTarget": "angular-cli-to-migrate-integrated:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n"
+    },
+    "test": {
+      "executor": "@angular/build:karma",
+      "options": {
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "tsConfig": "apps/angular-cli-to-migrate-integrated/tsconfig.spec.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/angular-cli-to-migrate-integrated/public"
+          }
+        ],
+        "styles": ["apps/angular-cli-to-migrate-integrated/src/styles.scss"]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<div class="container">
+  <lib-navigation
+    (login)="login()"
+    (logout)="logout()"
+    [loggedIn]="authStore.isLoggedIn()"
+  />
+
+  <router-outlet />
+
+  <lib-footer
+    [backendUrl]="backendUrl"
+    [realTimeConnection]="realTimeStore.connectionStatus()"
+    [userEmail]="authStore.userEmail()"
+  />
+</div>

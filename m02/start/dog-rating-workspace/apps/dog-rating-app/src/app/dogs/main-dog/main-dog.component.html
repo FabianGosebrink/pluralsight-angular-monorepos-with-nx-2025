@@ -1,10 +1,10 @@
-<lib-dog-rate
+<app-dog-rate
   (rated)="rateDog($event)"
   (skipped)="skipDog()"
   [currentDog]="store.selectedDog()"
-></lib-dog-rate>
+></app-dog-rate>
 
-<lib-dog-list
+<app-dog-list
   (dogSelected)="selectDog($event)"
   [dogs]="store.dogs()"
-></lib-dog-list>
+></app-dog-list>

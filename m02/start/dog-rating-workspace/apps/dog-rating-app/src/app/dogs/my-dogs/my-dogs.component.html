@@ -11,7 +11,7 @@
 
 <div class="list-group w-auto mt-5">
   @for (dog of store.myDogs(); track dog.id) {
-    <lib-single-dog [dog]="dog" (dogDeleted)="deleteDog($event)" />
+    <app-single-dog [dog]="dog" (dogDeleted)="deleteDog($event)" />
   } @empty {
     <div>No 🐕 added yet. Add one!</div>
   }

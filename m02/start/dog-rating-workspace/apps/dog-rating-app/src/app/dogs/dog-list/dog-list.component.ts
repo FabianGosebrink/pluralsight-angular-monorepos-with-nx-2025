@@ -7,7 +7,7 @@ import {
 import { Dog } from '../models/dog';
 
 @Component({
-  selector: 'lib-dog-list',
+  selector: 'app-dog-list',
   templateUrl: './dog-list.component.html',
   styleUrls: ['./dog-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

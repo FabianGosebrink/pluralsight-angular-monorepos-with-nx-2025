@@ -7,7 +7,7 @@ import { Dog } from '../models/dog';
 import { dogUserEvents } from '../store/dog-remove.feature';
 
 @Component({
-  selector: 'lib-my-dogs',
+  selector: 'app-my-dogs',
   imports: [RouterLink, SingleDogComponent],
   providers: [MyDogsStore],
   templateUrl: './my-dogs.component.html',

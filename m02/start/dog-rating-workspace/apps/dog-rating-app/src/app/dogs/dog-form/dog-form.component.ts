@@ -2,7 +2,7 @@ import { Component, inject, input, output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'lib-dog-form',
+  selector: 'app-dog-form',
   imports: [ReactiveFormsModule],
   templateUrl: './dog-form.component.html',
   styleUrl: './dog-form.component.scss',

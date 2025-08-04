@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 import { Dog } from '../models/dog';
 
 @Component({
-  selector: 'lib-single-dog',
+  selector: 'app-single-dog',
   imports: [RouterLink, DecimalPipe, DatePipe],
   templateUrl: './single-dog.component.html',
   styleUrls: ['./single-dog.component.scss'],

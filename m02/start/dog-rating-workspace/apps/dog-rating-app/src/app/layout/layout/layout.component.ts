@@ -7,7 +7,7 @@ import { environment } from '../../../environments/environment';
 import { RealTimeStore } from '../../real-time/store/real-time.store';
 
 @Component({
-  selector: 'lib-layout',
+  selector: 'app-layout',
   imports: [RouterModule, FooterComponent, NavigationComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss',

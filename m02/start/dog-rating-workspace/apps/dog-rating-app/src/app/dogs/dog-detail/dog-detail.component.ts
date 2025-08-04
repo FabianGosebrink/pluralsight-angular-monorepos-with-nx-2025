@@ -7,7 +7,7 @@ import { dogUserEvents } from '../store/dog-remove.feature';
 import { Dog } from '../models/dog';
 
 @Component({
-  selector: 'lib-dog-detail',
+  selector: 'app-dog-detail',
   imports: [RouterLink, NgOptimizedImage, DatePipe, DecimalPipe],
   providers: [DogDetailsStore],
   templateUrl: './dog-detail.component.html',

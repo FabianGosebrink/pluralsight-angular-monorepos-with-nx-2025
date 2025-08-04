@@ -4,7 +4,7 @@ import { DogListComponent } from '../dog-list/dog-list.component';
 import { DogRateComponent } from '../dog-rate/dog-rate.component';
 
 @Component({
-  selector: 'lib-main-dog',
+  selector: 'app-main-dog',
   imports: [DogListComponent, DogRateComponent],
   providers: [MainDogStore],
   templateUrl: './main-dog.component.html',

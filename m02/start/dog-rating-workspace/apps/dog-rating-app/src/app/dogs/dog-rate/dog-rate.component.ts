@@ -12,7 +12,7 @@ import { timer } from 'rxjs';
 import { Dog } from '../models/dog';
 
 @Component({
-  selector: 'lib-dog-rate',
+  selector: 'app-dog-rate',
   templateUrl: './dog-rate.component.html',
   styleUrls: ['./dog-rate.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

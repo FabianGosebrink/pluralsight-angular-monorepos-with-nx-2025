@@ -1,7 +1,7 @@
 /aspnetcore/.vs
-/aspnetcore/DoggoApi/bin
-/aspnetcore/DoggoApi/obj
-/aspnetcore/DoggoApi/myapp
+/aspnetcore/DogApi/bin
+/aspnetcore/DogApi/obj
+/aspnetcore/DogApi/myapp
 **/angular/.temp
 **/.nx
 **/.angular

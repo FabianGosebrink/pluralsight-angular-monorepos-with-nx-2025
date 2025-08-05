@@ -17,7 +17,7 @@ namespace DogApi
                 throw new ArgumentNullException(nameof(requirement));
             }
 
-            Claim scopeClaim = context.User.Claims.FirstOrDefault(t => t.Type == "scope");
+            Claim? scopeClaim = context.User?.Claims?.FirstOrDefault(t => t.Type == "scope");
 
             if (scopeClaim == null)
             {

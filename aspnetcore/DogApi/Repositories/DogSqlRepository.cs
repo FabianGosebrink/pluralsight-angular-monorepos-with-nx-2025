@@ -27,7 +27,13 @@ namespace DogApi.Repositories
 
         public void Delete(Guid id)
         {
-            DogEntity item = GetSingle(id);
+            DogEntity? item = GetSingle(id);
+
+            if (item == null)
+            {
+                throw new ArgumentException($"Dog with id {id} not found.");
+            }
+
             _dbContext.Dogs.Remove(item);
         }
 

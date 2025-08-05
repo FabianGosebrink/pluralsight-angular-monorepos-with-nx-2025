@@ -34,9 +34,9 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddCustomCors("AllowAllOrigins");
 
-string auth0Audience = builder.Configuration["Auth0:Audience"];
-string auth0Domain = builder.Configuration["Auth0:Domain"];
-string clientId = builder.Configuration["Auth0:ClientId"];
+string auth0Audience = builder.Configuration["Auth0:Audience"] ?? "";
+string auth0Domain = builder.Configuration["Auth0:Domain"] ?? "";
+string clientId = builder.Configuration["Auth0:ClientId"]?? "";
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
      .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, c =>

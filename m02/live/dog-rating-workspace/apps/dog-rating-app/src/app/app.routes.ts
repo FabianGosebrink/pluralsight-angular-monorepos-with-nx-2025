@@ -1,10 +1,10 @@
 import { Route } from '@angular/router';
-import { LayoutComponent } from './layout/layout/layout.component';
+import { LayoutComponent } from '@dog-rate-app/shared/ui-common';
 import { AddDogComponent } from './dogs/add-dog/add-dog.component';
 import { DogDetailComponent } from './dogs/dog-detail/dog-detail.component';
 import { MainDogComponent } from './dogs/main-dog/main-dog.component';
 import { AboutComponent } from './about/about.component';
-import { isAuthenticated } from './authentication/guards/auth.guard';
+import { isAuthenticated } from '@dog-rate-app/shared/util-auth';
 import { MyDogsComponent } from './dogs/my-dogs/my-dogs.component';
 
 export const APP_ROUTES: Route[] = [

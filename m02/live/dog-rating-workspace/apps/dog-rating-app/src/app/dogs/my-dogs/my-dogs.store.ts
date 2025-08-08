@@ -13,7 +13,7 @@ import { tapResponse } from '@ngrx/operators';
 import { on, withReducer } from '@ngrx/signals/events';
 import { DogsStore } from '../store/dogs.store';
 import { dogAPIEvents } from '../store/dog-remove.feature';
-import { WebNotificationService } from '../../notification/web-notification.service';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
 import { DogsApiService } from '../services/dogs-api.service';
 
 export const MyDogsStore = signalStore(

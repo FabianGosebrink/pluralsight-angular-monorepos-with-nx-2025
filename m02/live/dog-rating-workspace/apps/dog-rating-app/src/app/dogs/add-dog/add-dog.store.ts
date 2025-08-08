@@ -4,7 +4,7 @@ import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { concatMap, exhaustMap, map } from 'rxjs';
 import { tapResponse } from '@ngrx/operators';
 import { Router } from '@angular/router';
-import { WebNotificationService } from '../../notification/web-notification.service';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
 import { DogsApiService } from '../services/dogs-api.service';
 import { UploadService } from '../services/upload.service';
 import { DogsStore } from '../store/dogs.store';

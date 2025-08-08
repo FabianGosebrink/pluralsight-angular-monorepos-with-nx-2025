@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve dog-rating-app --configuration=development"
+    "start": "nx serve dog-rating-app --configuration=development",
+    "graph": "nx graph",
+    "build": "nx build dog-rating-app"
   },
   "private": true,
   "dependencies": {

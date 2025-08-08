@@ -13,7 +13,7 @@ import { tapResponse } from '@ngrx/operators';
 import { Router } from '@angular/router';
 import { DogsStore } from '../store/dogs.store';
 import { withDogRealtime } from '../store/dog-realtime.feature';
-import { WebNotificationService } from '../../notification/web-notification.service';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
 import { DogsApiService } from '../services/dogs-api.service';
 
 export const MainDogStore = signalStore(

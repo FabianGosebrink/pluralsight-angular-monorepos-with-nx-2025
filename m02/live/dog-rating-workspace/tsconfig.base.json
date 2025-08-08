@@ -14,7 +14,19 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dog-rate-app/shared/ui-common": ["libs/shared/ui-common/src/index.ts"],
+      "@dog-rate-app/shared/util-auth": ["libs/shared/util-auth/src/index.ts"],
+      "@dog-rate-app/shared/util-environments": [
+        "libs/shared/util-environments/src/index.ts"
+      ],
+      "@dog-rate-app/shared/util-notification": [
+        "libs/shared/util-notification/src/index.ts"
+      ],
+      "@dog-rate-app/shared/util-real-time": [
+        "libs/shared/util-real-time/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

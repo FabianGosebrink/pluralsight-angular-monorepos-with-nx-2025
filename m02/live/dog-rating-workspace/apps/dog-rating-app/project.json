@@ -48,8 +48,8 @@
           "sourceMap": true,
           "fileReplacements": [
             {
-              "replace": "apps/dog-rating-app/src/environments/environment.ts",
-              "with": "apps/dog-rating-app/src/environments/environment.development.ts"
+              "replace": "libs/shared/util-environments/src/lib/environment.ts",
+              "with": "libs/shared/util-environments/src/lib/environment.development.ts"
             }
           ]
         }

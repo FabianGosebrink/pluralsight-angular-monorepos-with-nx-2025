@@ -4,9 +4,9 @@ import { Dog } from '../models/dog';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { tap } from 'rxjs';
 import { DogsStore } from './dogs.store';
-import { WebNotificationService } from '../../notification/web-notification.service';
-import { AuthStore } from '../../authentication/state/auth.store';
-import { RealTimeStore } from '../../real-time/store/real-time.store';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
+import { AuthStore } from '@dog-rate-app/shared/util-auth';
+import { RealTimeStore } from '@dog-rate-app/shared/util-real-time';
 
 export function withDogRealtime() {
   return signalStoreFeature(

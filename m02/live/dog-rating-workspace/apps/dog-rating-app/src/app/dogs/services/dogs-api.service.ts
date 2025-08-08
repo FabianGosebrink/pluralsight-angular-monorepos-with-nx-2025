@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Dog } from '../models/dog';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../../environments/environment';
+import { environment } from '@dog-rate-app/shared/util-environments';
 
 @Injectable({
   providedIn: 'root',

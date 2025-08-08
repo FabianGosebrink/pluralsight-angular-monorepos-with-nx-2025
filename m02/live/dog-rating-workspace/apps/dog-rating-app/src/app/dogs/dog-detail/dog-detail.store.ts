@@ -10,7 +10,7 @@ import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { exhaustMap, filter, pipe, tap } from 'rxjs';
 import { tapResponse } from '@ngrx/operators';
 import { DogsStore } from '../store/dogs.store';
-import { WebNotificationService } from '../../notification/web-notification.service';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
 import { DogsApiService } from '../services/dogs-api.service';
 
 export const DogDetailsStore = signalStore(

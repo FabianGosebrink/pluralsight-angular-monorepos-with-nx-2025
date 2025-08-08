@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AuthStore } from './authentication/state/auth.store';
+import { AuthStore } from '@dog-rate-app/shared/util-auth';
 
 @Component({
   imports: [RouterModule],

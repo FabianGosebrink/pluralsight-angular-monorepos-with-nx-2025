@@ -9,7 +9,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { authInterceptor, provideAuth } from 'angular-auth-oidc-client';
 import { provideToastr } from 'ngx-toastr';
-import { environment } from '../environments/environment';
+import { environment } from '@dog-rate-app/shared/util-environments';
 
 export const appConfig: ApplicationConfig = {
   providers: [

@@ -13,7 +13,7 @@ import {
   withReducer,
 } from '@ngrx/signals/events';
 import { removeEntity } from '@ngrx/signals/entities';
-import { WebNotificationService } from '../../notification/web-notification.service';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
 
 export const dogUserEvents = eventGroup({
   source: 'Dogs User',

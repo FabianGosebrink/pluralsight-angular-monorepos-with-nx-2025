@@ -19,7 +19,7 @@ import { tapResponse } from '@ngrx/operators';
 import { Dog } from '../models/dog';
 import { DogsApiService } from '../services/dogs-api.service';
 import { withDogRemove } from './dog-remove.feature';
-import { WebNotificationService } from '../../notification/web-notification.service';
+import { WebNotificationService } from '@dog-rate-app/shared/util-notification';
 
 export const DogsStore = signalStore(
   { providedIn: 'root' },

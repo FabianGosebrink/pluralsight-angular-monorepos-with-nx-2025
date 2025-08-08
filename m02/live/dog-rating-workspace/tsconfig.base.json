@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@dog-rate-app/about/container": ["libs/about/container/src/index.ts"],
+      "@dog-rate-app/dogs/container": ["libs/dogs/container/src/index.ts"],
+      "@dog-rate-app/dogs/domain": ["libs/dogs/domain/src/index.ts"],
+      "@dog-rate-app/dogs/ui": ["libs/dogs/ui/src/index.ts"],
       "@dog-rate-app/shared/ui-common": ["libs/shared/ui-common/src/index.ts"],
       "@dog-rate-app/shared/util-auth": ["libs/shared/util-auth/src/index.ts"],
       "@dog-rate-app/shared/util-environments": [

@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve dog-rating-app --configuration=development",
     "graph": "nx graph",
-    "build": "nx build dog-rating-app"
+    "build": "nx build dog-rating-app",
+    "lint": "nx run-many -t lint"
   },
   "private": true,
   "dependencies": {

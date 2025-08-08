@@ -1,0 +1,15 @@
+<div class="container">
+  <app-navigation
+    (login)="login()"
+    (logout)="logout()"
+    [loggedIn]="authStore.isLoggedIn()"
+  />
+
+  <router-outlet />
+
+  <app-footer
+    [backendUrl]="backendUrl"
+    [realTimeConnection]="realTimeStore.connectionStatus()"
+    [userEmail]="authStore.userEmail()"
+  />
+</div>

@@ -19,6 +19,7 @@
       "@dog-rate-app/dogs/container": ["libs/dogs/container/src/index.ts"],
       "@dog-rate-app/dogs/domain": ["libs/dogs/domain/src/index.ts"],
       "@dog-rate-app/dogs/ui": ["libs/dogs/ui/src/index.ts"],
+      "@dog-rate-app/my-buildable": ["libs/my-buildable/src/index.ts"],
       "@dog-rate-app/shared/ui-common": ["libs/shared/ui-common/src/index.ts"],
       "@dog-rate-app/shared/util-auth": ["libs/shared/util-auth/src/index.ts"],
       "@dog-rate-app/shared/util-environments": [
@@ -29,7 +30,8 @@
       ],
       "@dog-rate-app/shared/util-real-time": [
         "libs/shared/util-real-time/src/index.ts"
-      ]
+      ],
+      "@fabian/pluralsight": ["libs/my-publishable/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

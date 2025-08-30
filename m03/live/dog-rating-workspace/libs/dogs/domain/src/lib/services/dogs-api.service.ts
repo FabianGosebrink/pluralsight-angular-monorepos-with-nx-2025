@@ -1,8 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { environment } from '@dog-rate-app/shared/util-environments';
 import { map, Observable } from 'rxjs';
 import { Dog } from '../models/dog';
-import { HttpClient } from '@angular/common/http';
-import { environment } from '@dog-rate-app/shared/util-environments';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +11,9 @@ export class DogsApiService {
   private readonly http = inject(HttpClient);
 
   getDogs(): Observable<Dog[]> {
-    return this.http.get<Dog[]>(`${environment.server}api/dogs`);
+    const name = "Fabian Gosebrink";
+
+             return this.http.get<Dog[]>(`${environment.server}api/dogs`);
   }
 
   getSingleDog(id: string): Observable<Dog> {

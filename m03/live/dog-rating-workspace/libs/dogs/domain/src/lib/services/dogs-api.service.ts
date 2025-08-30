@@ -10,10 +10,7 @@ import { Dog } from '../models/dog';
 export class DogsApiService {
   private readonly http = inject(HttpClient);
 
-  getDogs(): Observable<Dog[]> {
-    const name = "Fabian Gosebrink";
-
-             return this.http.get<Dog[]>(`${environment.server}api/dogs`);
+  getDogs(): Observable<Dog[]> {return this.http.get<Dog[]>(`${environment.server}api/dogs`);
   }
 
   getSingleDog(id: string): Observable<Dog> {

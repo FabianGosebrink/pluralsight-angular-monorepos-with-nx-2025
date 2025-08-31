@@ -4,7 +4,7 @@
   "sourceRoot": "libs/about/container/src",
   "prefix": "lib",
   "projectType": "library",
-  "tags": [],
+  "tags": ["type:container", "scope:about"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",

@@ -1,3 +1,8 @@
 {
-  "workbench.editor.restoreViewState": false
+  "workbench.editor.restoreViewState": false,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "never"
+    }
+}
 }
